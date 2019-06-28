@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    color:rgba(255,255,255,0.8);
+}
+html {
+    height: 99%;
+  }
+  body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+    color:rgba(255,255,255,0.8);
+  }
+  .iCloudCSS {
+    height: 101%;
+    width: 100%;
+  }
+  .iCloudCSS {
+    float: right;
+    background: linear-gradient(to bottom, rgba(7,42,78,1) 0%,rgba(10,48,85,1) 6%,rgba(19,66,106,1) 15%,rgba(35,94,137,1) 24%,rgba(60,127,166,1) 33%,rgba(80,146,178,1) 39%,rgba(100,163,184,1) 44%,rgba(128,180,182,1) 51%,rgba(151,192,177,1) 56%,rgba(178,201,166,1) 62%,rgba(194,202,155,1) 66%,rgba(213,199,137,1) 71%,rgba(228,189,118,1) 76%,rgba(238,168,92,1) 84%,rgba(240,150,75,1) 92%,rgba(236,126,57,1) 98%,rgba(235,120,53,1) 100%); /* W3C */  
+  }
+
+  /* Header Start */
+.Header{
+    width: 100%;
+    height: 50px;
+    display: flex;
+}
+.text-logo{
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.text-logo > p{
+    font-size: 22px;
+    font-weight: 200;
+}
+.instructions{
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 40px;
+    margin-left: 40px;
+}
+.instructions-text{
+    font-size: 22px;
+}
+.instructions a{
+    text-decoration: none;
+}
+.instructions  .fal{
+    font-size: 20px;
+    font-weight: 200;
+}
+/*Header End*/
+
+/* Content Start */
+
+.Content{
+    width: 350px;
+    height: 300px;
+    margin: 140px auto 0 auto;
+    text-align: center;
+}
+.icloud-logo{
+    width: 100px;
+}
+.login-text p{
+    font-size: 25px;
+}
+.form{
+    margin-top: 25px;
+}
+.form span{
+    display: block;
+    position: relative;
+}
+#password, #username{
+    width: 300px;
+    height: 30px;
+    border:none;
+    border-radius: 6px;
+    padding: 5px 10px;
+    font-size: 18px;
+    color: rgb(94, 94, 94);
+}
+#username{
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-bottom: 1px solid rgb(190, 190, 190);
+}
+#password{
+    transition: height 0.2s linear;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+#username:focus, #password:focus{
+    outline: none;
+}
+.fa-arrow-circle-right{
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 25px;
+    cursor: pointer;
+    color: #494949;
+}
+.forget-password{
+    margin-top: 20px;
+}
+
+.forget-password a{
+    text-decoration: none;
+}
+.forget-password:hover a{
+    text-decoration: underline;
+}
+
+/* Content End */
+
+
+@media screen and (max-width:400px){
+    
+body{
+    width: 100%;
+}
+.iCloudCSS{
+    height: 600px;
+}
+    
+#password, #username{
+    width: 220px;
+    height: 25px;
+    font-size: 14px;
+}
+
+.fa-arrow-circle-right{
+    top: 7px;
+    right: 60px;
+}
+
+.text-logo > p{
+    font-size: 16px;
+}
+.instructions{
+    margin-right: 20px;
+    margin-left: 10px;
+}
+.instructions-text{
+    font-size: 16px;
+}
+
+}
